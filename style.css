@@ -582,3 +582,59 @@ h1,h2,h3 { font-family: 'Playfair Display', serif; line-height: 1.18; }
   .pg-lb-prev { left: 8px; }
   .pg-lb-next { right: 8px; }
 }
+
+/* ===== MOBILE FIX ===== */
+
+@media (max-width: 900px){
+
+  .categories-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .why-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .reviews-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .pg-masonry{
+    columns:2;
+  }
+
+}
+
+/* PHONE */
+@media (max-width: 600px){
+
+  .categories-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .pg-masonry{
+    columns:1;
+  }
+
+  .hero-title{
+    font-size: 3rem;
+  }
+
+  .hero-btns{
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .container{
+    padding:0 16px;
+  }
+
+}
